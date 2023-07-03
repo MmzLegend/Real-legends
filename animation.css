@@ -87,7 +87,7 @@
   }
   
   body {
-    background-image: url("/3950408.jpg");
+    background-color: #333;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -115,12 +115,18 @@
   }
   
   .introduction-section {
-    position: absolute;
+    position: relative;
     top: 70px; /* Adjust the top value as needed */
     left: 0;
     right: 0;
-    bottom: 0;
+    margin-bottom: 70px; /* Add margin to create space between sections */
   }
+  
+  .special-of-the-week-section {
+    background-color: transparent; /* Remove the background color */
+    padding: 20px;
+  }
+  
   
   .introduction-content {
     text-align: center;
@@ -141,14 +147,16 @@
   }
   
   .special-of-the-week-section {
-    background-color: #f9f9f9;
+    background-color: transparent; /* Remove the background color */
     padding: 20px;
     margin-top: 20px; /* Add a margin between the sections */
+    margin-bottom: 0; /* Remove the bottom margin */
   }
+  
   
   .special-of-the-week-section h2 {
     text-align: center;
-  }
+    color: aliceblue;  }
   
   .animation-box {
     display: flex;
@@ -196,8 +204,7 @@
   .feedback {
     cursor: pointer;
   }
-  /* Add your existing CSS styles here */
-/* ... */
+/* Existing CSS styles */
 
 /* Additional Styles */
 
@@ -210,22 +217,14 @@
   cursor: pointer; /* Add cursor pointer */
 }
 
-/* Add a new class for the active state */
-.active {
-  color: black; /* Set the color to black */
-}
-
-.feedback-input {
-  display: flex;
-  align-items: center;
+/* Remove the comment section from the special of the week */
+.special-of-the-week-section .animation-box .animation .rating {
   margin-top: 10px;
 }
 
-.feedback-input textarea {
-  width: 100%;
-  padding: 5px;
-}
-
-.feedback-input button {
-  margin-left: 10px;
+.thumbs-rating span {
+  margin-right: 5px;
+  font-size: 30px; /* Increase the font size */
+  color: white;
+  cursor: pointer;
 }
