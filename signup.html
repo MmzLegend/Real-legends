@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Legends - Sign-in</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+   <!-- Signin/Signup Modal -->
+<div id="signup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('signin-tab')">Sign In</button>
+            <button class="tab-btn" onclick="openTab('signup-tab')">Sign Up</button>
+        </div>
+        <div id="signup-modal-content" class="tab-content">
+            <!-- Sign in form content -->
+            <div id="signin-tab" class="tab-pane active">
+                <form>
+                    <!-- Sign in form fields -->
+                    <label for="signin-username">Username:</label>
+                    <input type="text" id="signin-username" name="signin-username" required>
+
+                    <label for="signin-password">Password:</label>
+                    <input type="password" id="signin-password" name="signin-password" required>
+
+                    <input type="submit" value="Sign In">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,182 @@
+/* styles.css */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    padding: 0;
+    z-index: 100;
+    border-bottom: 1px solid black;
+
+  }
+  
+  .logo img {
+    height: 80px;
+    width: 150px;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* styles.css */
+  
+  .signup-logo {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .signup-logo .logo-img {
+    height: 20px; /* Adjust the height as per your preference */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some spacing between the logo and text */
+  }
+  
+  .signup-logo .signup-text {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .signup-logo:hover .signup-text {
+    display: block;
+  }
+/* Add your existing CSS styles here */ 
+
+.services-section {
+    position: relative;
+  }
+  
+  .services-image {
+    position: relative;
+    text-align: center;
+  }
+  
+  .services-image img {
+    height: 700px;
+    width: 1700px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .services-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+  }
+  
+  .services-overlay h2 {
+    margin: 0;
+  }
+  
+  .content-section {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 20px;
+    max-width: 700px;
+    margin-left: 40px;
+    margin-right: auto;
+  }
+  
+  .content-section p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  /* Add this code to your existing CSS styles */
+
+.service-box {
+    background-color: #dbd9d0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  .service-box h3 {
+    margin-top: 0;
+  }
+  
+  .separator-line {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  .read-more-link {
+    text-decoration: underline;
+    color: black;
+  }
+  .footer {
+    background-color: blanchedalmond;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 200px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 10px;
+    margin: 50px;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+  }
+  
+  .footer-links li:not(:last-child)::after {
+    content: "|";
+    margin: 0 10px;
+  }
+  

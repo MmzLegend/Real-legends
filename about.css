@@ -1,0 +1,226 @@
+/* about.css */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    padding: 0;
+    z-index: 100;
+    border-bottom: 1px solid black;
+
+}
+
+.logo img {
+    height: 80px;
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.signup-logo {
+    display: inline-block;
+    position: relative;
+}
+
+.signup-logo .logo-img {
+    height: 20px; /* Adjust the height as per your preference */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some spacing between the logo and text */
+}
+
+.signup-logo .signup-text {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.signup-logo:hover .signup-text {
+    display: block;
+}
+
+.solid-color-section {
+    background-color: #cfcec9;
+    padding: 20px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+
+  }
+  
+  .solid-color-content {
+    text-align: center;
+  }
+  
+  .solid-color-content h2 {
+    margin: 0;
+  }
+  
+  .solid-color-content p {
+    margin: 0;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  .table-of-contents {
+    flex-shrink: 0;
+    width: 200px;
+    margin-right: 20px;
+    background-color: rgb(241, 239, 235);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black
+  }
+  
+.container {
+    display: flex;
+    margin-top: 100px; /* Add spacing below the navigation bar */
+}
+
+
+.table-of-contents ul {
+    list-style: none;
+    padding: 0;
+}
+
+.table-of-contents li {
+    margin-bottom: 10px;
+}
+
+.table-of-contents a {
+    text-decoration: none;
+    color: black;
+}
+
+.content-sections {
+    flex: 1;
+}
+
+.content-section {
+    padding: 20px;
+    background-color: #F9F9F9;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content-section h3 {
+    margin: 0 0 10px;
+}
+
+.content-section p {
+    margin: 0;
+}
+
+.content-sections .content-section {
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  .content-sections .content-section h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .content-sections .content-section p {
+    margin: 0;
+    font-size: 16px;
+  }
+  .join-us-section {
+    text-align: center;
+    margin-top: 20px; /* Add spacing between content sections and "Join Us" */
+  }
+  
+  .join-us-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #000;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .join-us-link:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .footer {
+    background-color: blanchedalmond;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 200px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 10px;
+    margin: 50px;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+  }
+  
+  .footer-links li:not(:last-child)::after {
+    content: "|";
+    margin: 0 10px;
+  }
+  
+/* End of about.css */
