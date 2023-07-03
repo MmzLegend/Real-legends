@@ -196,4 +196,36 @@
   .feedback {
     cursor: pointer;
   }
-  
+  /* Add your existing CSS styles here */
+/* ... */
+
+/* Additional Styles */
+
+/* Modify the thumbs-up and thumbs-down styles */
+.thumbs-up,
+.thumbs-down {
+  margin-right: 5px;
+  font-size: 24px; /* Increase the size */
+  color: white; /* Set the color to white */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+/* Add a new class for the active state */
+.active {
+  color: black; /* Set the color to black */
+}
+
+.feedback-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.feedback-input textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+.feedback-input button {
+  margin-left: 10px;
+}

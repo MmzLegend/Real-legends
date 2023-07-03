@@ -28,5 +28,38 @@ window.addEventListener("DOMContentLoaded", function () {
   
     // Start the slideshow by showing the next image every 5 seconds
     setInterval(showNextImage, 5000);
-  });
+  });// Get thumbs-up and thumbs-down elements
+  var thumbsUp = document.querySelector('.thumbs-up');
+  var thumbsDown = document.querySelector('.thumbs-down');
+  
+  // Add click event listeners to thumbs-up and thumbs-down
+  thumbsUp.addEventListener('click', handleThumbsUpClick);
+  thumbsDown.addEventListener('click', handleThumbsDownClick);
+  
+  // Function to handle thumbs-up click event
+  function handleThumbsUpClick() {
+    if (thumbsUp.classList.contains('active')) {
+      // Already clicked, remove the active class
+      thumbsUp.classList.remove('active');
+    } else {
+      // Not clicked, add the active class
+      thumbsUp.classList.add('active');
+      // Remove the active class from thumbs-down if present
+      thumbsDown.classList.remove('active');
+    }
+  }
+  
+  // Function to handle thumbs-down click event
+  function handleThumbsDownClick() {
+    if (thumbsDown.classList.contains('active')) {
+      // Already clicked, remove the active class
+      thumbsDown.classList.remove('active');
+    } else {
+      // Not clicked, add the active class
+      thumbsDown.classList.add('active');
+      // Remove the active class from thumbs-up if present
+      thumbsUp.classList.remove('active');
+    }
+  }
+  
   
